@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long n;
+    int a=2;
+    cout <<"enter the value of n";
+    cin>>n;
+    for(int i=3;i<n;i++)
+    {
+        for(int j=2;j<i;j++)
+        {
+            if(i%j==0)
+                break;
+            if(j==i-1)
+            {
+
+                a = a+i;
+            }
+
+        }
+    }
+    cout<<a;
+    return 0;
+}

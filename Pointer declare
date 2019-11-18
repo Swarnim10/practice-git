@@ -1,6 +1,7 @@
 // C program to demonstrate declaration of 
 // pointer variables. 
-#include <stdio.h> 
+#include <stdio.h>
+#include<conio.h>
 int main() 
 { 
     int x = 10; 
@@ -17,4 +18,5 @@ int main()
     ptr = &x; 
   
     return 0; 
+    getch();
 }

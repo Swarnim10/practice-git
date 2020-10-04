@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define MP make_pair
+#define PB push_back
+#define MOD 1000000007
+#define PI 3.14159265358979323                               
+int main(){
+ios_base::sync_with_stdio(0);
+cin.tie(0);
+ll tc;
+cin>>tc;
+while(tc--){	
+	ll n , m , a1 , a2 , a3 , a4 , ans=0 , n1=0;
+	cin>>n>>m;
+	for(ll i=0;i<n;i++){
+		cin>>a1>>a2;
+		cin>>a3>>a4;
+		if(m%2==0){
+			if(a2==a3)
+			ans++;
+		}
+		else
+			n1++;
+		}
+	//	cout<<"the ans is:"<<ans<<endl;
+		if(ans>=1)
+		cout<<"YES"<<endl;
+		else if(n1>0)
+		cout<<"NO"<<endl;
+		else
+		cout<<"NO"<<endl;
+	ans=0;
+}
+return 0;
+}
